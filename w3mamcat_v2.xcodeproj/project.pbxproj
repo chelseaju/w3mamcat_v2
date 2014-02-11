@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5ED10C2A1862F185004A1FBE /* w3mamcat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C021862F185004A1FBE /* w3mamcat.cpp */; };
+		5ED10C2B1862F185004A1FBE /* config.js in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C031862F185004A1FBE /* config.js */; };
+		5ED10C2C1862F185004A1FBE /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C061862F185004A1FBE /* Makefile */; };
+		5ED10C2D1862F185004A1FBE /* javascript.js in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C0C1862F185004A1FBE /* javascript.js */; };
+		5ED10C2E1862F185004A1FBE /* ert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C111862F185004A1FBE /* ert.cpp */; };
+		5ED10C2F1862F185004A1FBE /* iia_err.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C131862F185004A1FBE /* iia_err.cpp */; };
+		5ED10C301862F185004A1FBE /* iia_mem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C161862F185004A1FBE /* iia_mem.cpp */; };
+		5ED10C311862F185004A1FBE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C191862F185004A1FBE /* main.cpp */; };
+		5ED10C321862F185004A1FBE /* mamcatmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C1B1862F185004A1FBE /* mamcatmodel.cpp */; };
+		5ED10C331862F185004A1FBE /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C1D1862F185004A1FBE /* matrix.cpp */; };
+		5ED10C341862F185004A1FBE /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C1F1862F185004A1FBE /* model.cpp */; };
+		5ED10C351862F185004A1FBE /* nrcutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED10C211862F185004A1FBE /* nrcutil.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5ED10BF21862F102004A1FBE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5ED10BF41862F102004A1FBE /* w3mamcat_v2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = w3mamcat_v2; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED10C021862F185004A1FBE /* w3mamcat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = w3mamcat.cpp; sourceTree = "<group>"; };
+		5ED10C031862F185004A1FBE /* config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = config.js; sourceTree = "<group>"; };
+		5ED10C051862F185004A1FBE /* master.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = master.h; sourceTree = "<group>"; };
+		5ED10C061862F185004A1FBE /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		5ED10C081862F185004A1FBE /* cat_but.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cat_but.gif; sourceTree = "<group>"; };
+		5ED10C091862F185004A1FBE /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
+		5ED10C0A1862F185004A1FBE /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		5ED10C0B1862F185004A1FBE /* header.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = header.xcf; sourceTree = "<group>"; };
+		5ED10C0C1862F185004A1FBE /* javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = javascript.js; sourceTree = "<group>"; };
+		5ED10C0D1862F185004A1FBE /* mam_but.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mam_but.gif; sourceTree = "<group>"; };
+		5ED10C0E1862F185004A1FBE /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		5ED10C0F1862F185004A1FBE /* w3mamcat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = w3mamcat.gif; sourceTree = "<group>"; };
+		5ED10C111862F185004A1FBE /* ert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ert.cpp; sourceTree = "<group>"; };
+		5ED10C121862F185004A1FBE /* ert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ert.h; sourceTree = "<group>"; };
+		5ED10C131862F185004A1FBE /* iia_err.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iia_err.cpp; sourceTree = "<group>"; };
+		5ED10C141862F185004A1FBE /* iia_err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iia_err.h; sourceTree = "<group>"; };
+		5ED10C151862F185004A1FBE /* iia_key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iia_key.h; sourceTree = "<group>"; };
+		5ED10C161862F185004A1FBE /* iia_mem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iia_mem.cpp; sourceTree = "<group>"; };
+		5ED10C171862F185004A1FBE /* iia_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iia_mem.h; sourceTree = "<group>"; };
+		5ED10C181862F185004A1FBE /* iia_num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iia_num.h; sourceTree = "<group>"; };
+		5ED10C191862F185004A1FBE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5ED10C1A1862F185004A1FBE /* Mamcat_Test.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = Mamcat_Test.1; sourceTree = "<group>"; };
+		5ED10C1B1862F185004A1FBE /* mamcatmodel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mamcatmodel.cpp; sourceTree = "<group>"; };
+		5ED10C1C1862F185004A1FBE /* mamcatmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mamcatmodel.h; sourceTree = "<group>"; };
+		5ED10C1D1862F185004A1FBE /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix.cpp; sourceTree = "<group>"; };
+		5ED10C1E1862F185004A1FBE /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		5ED10C1F1862F185004A1FBE /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		5ED10C201862F185004A1FBE /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		5ED10C211862F185004A1FBE /* nrcutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nrcutil.cpp; sourceTree = "<group>"; };
+		5ED10C221862F185004A1FBE /* nrcutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nrcutil.h; sourceTree = "<group>"; };
+		5ED10C231862F185004A1FBE /* test */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = test; sourceTree = "<group>"; };
+		5ED10C251862F185004A1FBE /* contact.tmpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = contact.tmpl; sourceTree = "<group>"; };
+		5ED10C261862F185004A1FBE /* input.tmpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.tmpl; sourceTree = "<group>"; };
+		5ED10C271862F185004A1FBE /* intro.tmpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = intro.tmpl; sourceTree = "<group>"; };
+		5ED10C281862F185004A1FBE /* master.tmpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = master.tmpl; sourceTree = "<group>"; };
+		5ED10C291862F185004A1FBE /* result.tmpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = result.tmpl; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ED10BF11862F102004A1FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ED10BE91862F101004A1FBE = {
+			isa = PBXGroup;
+			children = (
+				5ED10C011862F185004A1FBE /* app */,
+				5ED10C031862F185004A1FBE /* config.js */,
+				5ED10C061862F185004A1FBE /* Makefile */,
+				5ED10C071862F185004A1FBE /* media */,
+				5ED10C101862F185004A1FBE /* model */,
+				5ED10C241862F185004A1FBE /* view */,
+				5ED10BF71862F102004A1FBE /* w3mamcat_v2 */,
+				5ED10BF51862F102004A1FBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5ED10BF51862F102004A1FBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ED10BF41862F102004A1FBE /* w3mamcat_v2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ED10BF71862F102004A1FBE /* w3mamcat_v2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = w3mamcat_v2;
+			sourceTree = "<group>";
+		};
+		5ED10C011862F185004A1FBE /* app */ = {
+			isa = PBXGroup;
+			children = (
+				5ED10C051862F185004A1FBE /* master.h */,
+				5ED10C021862F185004A1FBE /* w3mamcat.cpp */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		5ED10C071862F185004A1FBE /* media */ = {
+			isa = PBXGroup;
+			children = (
+				5ED10C081862F185004A1FBE /* cat_but.gif */,
+				5ED10C091862F185004A1FBE /* header.jpg */,
+				5ED10C0A1862F185004A1FBE /* header.png */,
+				5ED10C0B1862F185004A1FBE /* header.xcf */,
+				5ED10C0C1862F185004A1FBE /* javascript.js */,
+				5ED10C0D1862F185004A1FBE /* mam_but.gif */,
+				5ED10C0E1862F185004A1FBE /* style.css */,
+				5ED10C0F1862F185004A1FBE /* w3mamcat.gif */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		5ED10C101862F185004A1FBE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5ED10C111862F185004A1FBE /* ert.cpp */,
+				5ED10C121862F185004A1FBE /* ert.h */,
+				5ED10C131862F185004A1FBE /* iia_err.cpp */,
+				5ED10C141862F185004A1FBE /* iia_err.h */,
+				5ED10C151862F185004A1FBE /* iia_key.h */,
+				5ED10C161862F185004A1FBE /* iia_mem.cpp */,
+				5ED10C171862F185004A1FBE /* iia_mem.h */,
+				5ED10C181862F185004A1FBE /* iia_num.h */,
+				5ED10C191862F185004A1FBE /* main.cpp */,
+				5ED10C1A1862F185004A1FBE /* Mamcat_Test.1 */,
+				5ED10C1B1862F185004A1FBE /* mamcatmodel.cpp */,
+				5ED10C1C1862F185004A1FBE /* mamcatmodel.h */,
+				5ED10C1D1862F185004A1FBE /* matrix.cpp */,
+				5ED10C1E1862F185004A1FBE /* matrix.h */,
+				5ED10C1F1862F185004A1FBE /* model.cpp */,
+				5ED10C201862F185004A1FBE /* model.h */,
+				5ED10C211862F185004A1FBE /* nrcutil.cpp */,
+				5ED10C221862F185004A1FBE /* nrcutil.h */,
+				5ED10C231862F185004A1FBE /* test */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5ED10C241862F185004A1FBE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5ED10C251862F185004A1FBE /* contact.tmpl */,
+				5ED10C261862F185004A1FBE /* input.tmpl */,
+				5ED10C271862F185004A1FBE /* intro.tmpl */,
+				5ED10C281862F185004A1FBE /* master.tmpl */,
+				5ED10C291862F185004A1FBE /* result.tmpl */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ED10BF31862F102004A1FBE /* w3mamcat_v2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ED10BFE1862F102004A1FBE /* Build configuration list for PBXNativeTarget "w3mamcat_v2" */;
+			buildPhases = (
+				5ED10BF01862F102004A1FBE /* Sources */,
+				5ED10BF11862F102004A1FBE /* Frameworks */,
+				5ED10BF21862F102004A1FBE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = w3mamcat_v2;
+			productName = w3mamcat_v2;
+			productReference = 5ED10BF41862F102004A1FBE /* w3mamcat_v2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ED10BEB1862F101004A1FBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 5ED10BEE1862F101004A1FBE /* Build configuration list for PBXProject "w3mamcat_v2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5ED10BE91862F101004A1FBE;
+			productRefGroup = 5ED10BF51862F102004A1FBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ED10BF31862F102004A1FBE /* w3mamcat_v2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ED10BF01862F102004A1FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED10C2A1862F185004A1FBE /* w3mamcat.cpp in Sources */,
+				5ED10C2B1862F185004A1FBE /* config.js in Sources */,
+				5ED10C2C1862F185004A1FBE /* Makefile in Sources */,
+				5ED10C2D1862F185004A1FBE /* javascript.js in Sources */,
+				5ED10C2E1862F185004A1FBE /* ert.cpp in Sources */,
+				5ED10C2F1862F185004A1FBE /* iia_err.cpp in Sources */,
+				5ED10C301862F185004A1FBE /* iia_mem.cpp in Sources */,
+				5ED10C311862F185004A1FBE /* main.cpp in Sources */,
+				5ED10C321862F185004A1FBE /* mamcatmodel.cpp in Sources */,
+				5ED10C331862F185004A1FBE /* matrix.cpp in Sources */,
+				5ED10C341862F185004A1FBE /* model.cpp in Sources */,
+				5ED10C351862F185004A1FBE /* nrcutil.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5ED10BFC1862F102004A1FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5ED10BFD1862F102004A1FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5ED10BFF1862F102004A1FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5ED10C001862F102004A1FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ED10BEE1862F101004A1FBE /* Build configuration list for PBXProject "w3mamcat_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ED10BFC1862F102004A1FBE /* Debug */,
+				5ED10BFD1862F102004A1FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ED10BFE1862F102004A1FBE /* Build configuration list for PBXNativeTarget "w3mamcat_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ED10BFF1862F102004A1FBE /* Debug */,
+				5ED10C001862F102004A1FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5ED10BEB1862F101004A1FBE /* Project object */;
+}

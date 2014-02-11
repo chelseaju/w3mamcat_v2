@@ -1,0 +1,43 @@
+<% skin w3mamcat_skin %>
+<% view intro uses content::master extends master%>
+
+<% template page_content() %>  
+
+	<div id="content">
+		<div class="article">		
+			<h2>Parameter Estimator</h2>
+			<p><b>1. MODELING:</b> A linear n-compartment MAMMILLARY and/or CATENARY model can be formulated and fully quantified by tranformation from a known MULTIEXPONENTIAL MODEL (sum of n exponentials). Solutions are limited to models with both input and output in compartment 1, and n must be no greater than 10. <br/>
+			NOTE: A 2-step modeling process is assumed. The multiexponential model is typically obtained from kinetic time-series data using a data fitting program like DIMSUM+, another expert system available from the Biocybernetics Laboratory.
+			</p>
+			<p><b>2. MODEL DISCRIMINATION/DISTINGUISHABILITY:</b> An expert subsystem is included for determining whether a mammillary can be distiguished form a catenary linear compartmental model, each with n compartments, but input and output may be in any (same of different) compartments. We assume both can be fitted to a single output data set; the questions is whether the two different structures can be distinguished via this data. The theory is fully developed pedagogically, along with specific solutions.
+			</p> 
+        </div>
+        <hr class="noscreen" />
+		<div class="article">
+			<h2>Previous Work</h2>
+			<p>W<sup>3</sup>MAMCAT is the online version of MAMCAT+ Version 1.0, principally programmed by Hsiau-Te Su. The mathematical computations are done using the same code as the original program. The expert system for distinguishing mammillary and catenary models was originally programmed by Anh-Ngoc B. Kuhn De Chizelle. This version (v2.0) is an extention of Solomon Russell's work. The web application is designed to follow the MVC framework using CppCMS. The expert system is hosted on the server side, and user's inputs are stored in session, and parsed securely to the server. Results are then transfered back to the browser of client side.
+            </p>   
+            
+		</div>
+        <hr class="noscreen" />
+		<div class="resource">
+			<h2>References</h2>
+			<ul>
+				<li>Box, Don. <i>Essential COM</i>. Addison-Wesley Professional, 1998.</li>
+				<li>Chappell, David. <i>Understanding ActiveX and OLE: a guide for developers and managers</i>. Microsoft Press, 1996.</li>
+				<li>Distefano III, J. J. "Complete parameter bounds and quasiidentifiability conditions for a class of unidentifiable linear systems." <i>Mathematical Biosciences</i> 65.1 (1983): 51-68.</li>
+				<li>E.M. Landaw, B. C. Chen, J. J. DiStefano, III. "An Algorithm for the Identifiable Parameter Combinations of the General." <i>Mathematical Biosciences</i> 72.2 (1982):199-212.</li>
+				<li>Chen, Benjamin Chao-Min, Elliot M. Landaw, and Joseph J. DiStefano. "Algorithms for the identifiable parameter combinations and parameter bounds of unidentifiable catenary compartmental models." <i>Mathematical biosciences</i> 76.1 (1985): 59-68.</li>
+				<li>Distefano, Joseph J., Benjamin C. Chen, and Elliot M. Landaw. "Pool size and mass flux bounds and quasiidentifiability relations for catenary models." <i>Mathematical Biosciences</i> 88.1 (1988): 1-14.</li>
+				<li>Lindell, Robert, Joseph J. Distefano, and Elliot M. Landaw. "Statistical variability of parameter bounds for< i> n</i>-pool unidentifiable mammillary and catenary compartmental models." <i>Mathematical biosciences</i> 91.2 (1988): 175-199.</li>
+				<li>Kuhn de Chizelle, Anh-Ngoc B., and Joseph J. DiStefano. "MAMCAT: an expert system for distinguishing between mammillary and catenary compartmental models." <i>Computers in biology and medicine</i> 24.3 (1994): 189-204.</li>
+				<li>Vicini, Paolo, Hsiao-Te Su, and Joseph J. Distefano Iii. "Identifiability and interval identifiability of mammillary and catenary compartmental models with some known rate constants." <i>Mathematical biosciences</i> 167.2 (2000): 145-161.</li>
+                <li>Russell, Solomon, and Joseph J. DiStefano III. "W< sup> 3</sup> MAMCAT: A world wide web based tool for mammillary and catenary compartmental modeling and expert system distinguishability." <i>Computer methods and programs in biomedicine</i> 83.1 (2006): 34-42.</li>
+                <li>"CppCMS - The C Web Development Framework." CppCMS. Publisher, Feb. 2013, Web. http://cppcms.com/wikipp </li>
+
+			</ul>
+		</div>
+    </div>
+<% end template %>  
+<% end view %>  
+<% end skin %>  

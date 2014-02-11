@@ -1,0 +1,71 @@
+<% c++ #include "app/master.h" %>
+
+<% skin w3mamcat_skin %>
+<% view master uses content::master %>
+
+<% template title() %>
+    <% gt "W3MAMCAT - Mamcat Parameter Estimator"  %>
+<% end template %>
+
+<% template header() %>
+    <title><% include title() %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="/media/style.css" rel="stylesheet" type="text/css" />
+    <script src="/media/javascript.js"></script>
+<% end template %>
+
+<% template page_content() %>
+    Override  Me
+<% end %>  
+
+<% template render() %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <% include header() %>
+</head>
+
+<body>
+
+<div id="main" class="box">
+
+  <!--- LOGO --->
+  <div id="header">
+    <h1 id="logo"><strong>W<sup>3</sup></strong>MAMCAT v2.0</h1>
+    <hr class="noscreen" />
+  </div>
+
+  <!--- NAVIGATION TAB --->
+  <div id="tabs" class="noprint">
+    <h3 class="noscreen">Navigation</h3>
+    <ul class="box">
+      <li id='<%=intro_tab%>'><a href='<% url "" %>'>Home</a></li>
+      <li id='<%=input_tab%>'><a href='<% url "input" %>'>Inputs</a></li>
+      <li id='<%=result_tab%>'><a href='<% url "result" %>'>Results</a></li>
+      <li id='<%=help_tab%>'><a href="">Help</a></li>
+      <li><a href="http://www.biocyb.cs.ucla.edu/w3mamcat/expert/1.htm" target="_blank">MAMCAT v1.0</a></li>
+      <li id='<%=contact_tab%>'><a href='<% url "contact" %>'>Contacts</a></li>
+    </ul>
+    <hr class="noscreen" />
+  </div>
+
+  <div id="page" class="box">
+    <% include page_content() %>  
+ </div>
+ <hr class="noscreen" />
+ 
+ <div id="footer">
+    <p id="copyright">created by Chelsea Ju & Sepideh Mazrouee</br>
+    &copy; 2013 Prof. Joe DiStefano III, <a href="http://www.biocyb.cs.ucla.edu/">UCLA Biocybernetics</a> | All Right Reserved</p>
+ </div>
+
+ </div>
+</body>
+
+</html>
+
+<% end template %>
+<% end view %>
+<% end skin %>
+

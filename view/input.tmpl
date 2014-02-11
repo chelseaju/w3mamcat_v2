@@ -1,0 +1,170 @@
+<% skin w3mamcat_skin %>
+<% view input uses content::master extends master%>
+
+<% template page_content() %>  
+
+	<div id="content">
+        <div class="io">
+        
+        <form action="" method="post">	<% csrf %>
+            <% form as_space user_input.clear_form %>
+            <% form as_space user_input.submit %>
+
+            <table>
+                <tr>
+                <td>
+                <fieldset>
+                    <legend>Model Type</legend>
+                    <table>
+                    <tr>
+                        <td>
+                        <% form as_space user_input.modelType %>
+                        </td>
+                        <td>
+                            <img src='/media/mam_but.gif' style="height:10px"><br/>
+                            <img src='/media/cat_but.gif' style="height:10px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2>
+                        <% if not user_input.nCompartment.valid() %>
+                            <span class="cppcms_form_error">
+                            <%= user_input.nCompartment.error_message() %>
+                            </span>
+                        <% end %>
+                        
+                        <span class="cppcms_form_input">
+                        <%form begin user_input.nCompartment%>
+                        onChange = "add_yt(this);"
+                        <% form end user_input.nCompartment%>
+                        - Compartments
+                        </span>
+                        </td>
+                    </tr>
+                    </table>
+                </fieldset>
+                </td>
+
+                <td>
+                <fieldset>
+                    <legend>Units</legend>
+                    <table>
+                        <% form as_table user_input.mass %>
+                        <% form as_table user_input.time %> 
+                        <% form as_table user_input.volume %>
+                        <% form as_table user_input.endoMass %>
+                    </table>
+                </fieldset>
+                </td>
+                
+                <td rowspan="2">
+                <fieldset>
+                    <legend><i>y<sub>(t)</sub>= ∑ A<sub>i</sub>e<sup>L<sub>i</sub>t</sup></i></legend>
+                    <table>
+                    <tr style="height:20px">
+                        <td>
+                        <table>
+                            <tr>
+                                <th align="center">#</th>
+                                <th align="center">A (% dose/ml)</th>
+                            </tr>
+                            <% foreach a in user_input.yt_Ainput_form %>
+                                <% item %>
+                                <% form as_table a %>
+                                <% end%>                                
+                            <% end %>
+                        </table>
+                        </td>
+                        
+                        <td>
+                        <table>
+                        <tr>
+                            <th></th>
+                            <th align="center">L (1/sec)</th>
+                        </tr>
+                            <% foreach l in user_input.yt_Linput_form %>
+                                <% item %><% form as_table l %><% end%>                                
+                            <% end %>
+                        </table>
+                        </td>
+
+                    </tr>
+                    
+                    </table>
+				</fieldset>
+                </td>                
+                </tr>
+            
+                <tr>
+                <td>
+                <fieldset>
+                    <legend>Output Type</legend>
+                    <table>
+                        <tr>
+                            <td colspan = 2>
+                                <% form as_space user_input.outputType %>
+                            </td>
+                        </tr>                            
+                        <% form as_table user_input.steadyStateValue %>                    
+                    </table>
+                </fieldset>
+                </td>
+                <td>
+                <fieldset>
+                    <legend>Other Info</legend>
+                    <table>
+                        <% form as_table user_input.sigDig %>
+                        <% form as_table user_input.dose %>
+                        <% form as_table user_input.bodyWeight %>
+                    </table>
+                </fieldset>
+                </td>
+
+                </tr>
+
+                <tr>
+                    <td colspan = 2>
+                    <fieldset>
+                    <legend>Error Model (optional)</legend>
+                    <table>
+                    <tr>
+                        <td>
+                        Sample Size
+                        <%form begin user_input.sampleSize%>
+                            onChange = "add_sample(this)"
+                        <%form end user_input.sampleSize%>
+                        </td>
+                        <td rowspan = 2>                                           
+                            <table id="error">
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Error e <sub>(tk)</sub> has: <br/>
+                            <% form begin user_input.errorType %>
+                                onChange = "add_error()"
+                            <% form end user_input.errorType %>
+                         </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <% form as_space user_input.con_error %><br/>
+                            VAR Model: <br/>
+                            <% form as_space user_input.var_b %> <br/>
+                            <% form as_space user_input.var_c %> <br/>
+                            <% form as_space user_input.var_d %> <br/>
+                        </td>
+                    </tr>
+                    </table>
+                    </fieldset>                    
+                    </td>
+                </tr>
+            </table>
+        </form>  
+        </div>
+    </div>
+<% end template %>  
+<% end view %>  
+<% end skin %>  

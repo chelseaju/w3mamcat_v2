@@ -1,0 +1,111 @@
+* {min-height:100%;}
+body {
+	border:0; 
+	margin:0; 
+	padding:0; 
+	font:80%/160% "verdana",sans-serif;
+	color:#000000; _text-align:center;
+	background-image: -ms-linear-gradient(top, #69E6FF 0%, #FFFFFF 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #69E6FF 0%, #FFFFFF 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #69E6FF 0%, #FFFFFF 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #69E6FF), color-stop(1, #FFFFFF));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #69E6FF 0%, #FFFFFF 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #69E6FF 0%, #FFFFFF 100%);
+}
+
+p {border:0; margin:15px 0; padding:0;}
+div {display:block; border:0; margin:0; padding:0;}
+h1, h2, h3, h4, h5 {border:0; margin:15px 0 10px 0; padding:0; font-weight:bold;}
+h1 {font-size:260%; line-height:100%; font-family:"georgia",serif; font-weight:bold;}
+h2 {font-size:180%; line-height:100%; font-family:"georgia",serif; font-weight:bold;}
+h3 {font-size:120%; line-height:100%; font-weight:normal;}
+h4 {font-size:120%;}
+h5 {font-size:100%;}
+
+hr {display:block; height:1px; margin:0; padding:0; background:#CCC; border:0; color:#CCC;}
+
+
+.clear {clear:both;}
+.box {min-height:1px; _height:1px;}
+.box:after {content:"."; display:block; line-height:0px; font-size:0px; visibility:hidden; clear:both;}
+
+.noscreen {display:none;}
+
+/* -----------------...........--------------------------------------------------------------------------------------- */
+
+#main {width:90%; margin:30px auto 0 auto; _text-align:left;}
+
+/* Header */
+#header {
+	position:relative; 
+	width:100%; 
+	height:80px;
+	margin:0; 
+	padding:0;
+	border:0;
+	background:#d4f4ff url("/media/header.png") right top no-repeat;
+	color:#000099;}
+
+/* Header - logo */
+#header #logo {position:absolute; top:25px; left:35px; margin:0; font-style:italic; font-family:Verdana, Geneva, sans-serif; font-size:xx-large}
+
+/* Main menu (tabs) */
+#tabs {background:#00CCFF; margin:0; padding:10px 0 0 0; _height:1px;}
+
+#tabs ul {margin:0 20px; padding:0; list-style:none;}
+#tabs ul li {margin:0 5px 0 0; padding:0; float:left; font-size:12px; text-transform:uppercase; text-align:center}
+#tabs ul li a {display:block; position:relative; padding:7px 15px; border:0; background:#0000FF; color:#FFF; font-weight:bold; text-decoration:none; cursor:pointer;}
+
+/* Main menu (tabs - hover) */
+#tabs ul li a:hover {background:url("/media/tab_hover.gif") 0 0 repeat-x; color:#FFF;}
+
+/* Main menu (tabs - active) */
+#tabs ul li#active a {background:#FFF; color:#FF0000;}
+
+/* Content Page */
+#page {width:100%; min-height:1px; background:#FFF; _height:1px;}
+
+/* Content */
+#content {float:left; margin:0; padding:20px;}
+
+/* Content - article */
+#content .article {clear:both; margin:0; padding:10px 15px 0px 15px;}
+#content .article h2 {margin:0 -20px; padding:5px; color:#7f000b; text-decoration:underline;}
+#content .article p {text-align:justify;}
+
+/* Content - resource */
+#content .resource {clear:both; margin:0; padding:10px 15px 0px 15px; line-height:110%}
+#content .resource h2 {margin:0 -20px; padding:5px; color:#7f000b; text-decoration:underline;}
+#content ul {margin:10px; padding:0; list-style:decimal}
+#content ul li{margin:0; padding:0; font-size:10px;}
+
+/* Content - contacts */
+#content .contact {clear:both; margin:0; padding:10px 15px 10px 15px;}
+
+/* Content - IO */
+#content .io {clear:both; margin:0; padding:10px 15px 0px 15px; width:100%}
+#content .io table{width:100%; border:1px; padding:3px; width:100%; font-weight:bold;}
+#content .io table tr{padding:0; margin:0;}
+#content .io table tr td{padding:0 0 3px 3px; margin:0;}
+#content .io fieldset{margin:0; padding:10px; border:2px solid blue; font-size:90%; font-family: Arial, sans-serif; height:100%;}
+#content .io legend { padding: 5px; color:#7f000b; font-size:110%; font-weight:bold;}
+#content .io fieldset table {padding:0; margin:0; width:100%;}
+#content .io fieldset table tr{padding:0; margin:0; height:20px}
+#content .io fieldset table tr th{padding:0; margin:0; text-align:left;}
+#content .io fieldset table tr td{padding:0; margin:0; vertical-align:middle;}
+
+/* Footer */
+#footer {position:relative; clear:both; width:100%; height:40px; margin-bottom:30px; background:#00CCFF; color:#000;}
+
+/*  Footer - copyright */
+#footer p#copyright {float:right; margin:0; padding:7px 20px; font-size:x-small;text-align:right; line-height:120%}
+
+/* -----------------cppcms --------------------------------------------------------------------------------------- */
+
+.cppcms_form_error {color: red;}
+

@@ -1,0 +1,142 @@
+<% skin w3mamcat_skin %>
+<% view result uses content::result extends master%>
+<% template page_content() %>  
+    <div id="content">
+		<div class="io">
+			<table>
+				<tr>
+					<td>
+					<fieldset>
+						<legend>Transfer Function</legend>
+                        
+                        <%if setmodel %>
+                        <table style="padding:15px";>
+                            <tr>
+                                <td style="border-bottom:thin solid "><center><i><%= tfFunction.at(0) | raw %> </i></center></td>
+                            </tr>
+                            <tr>
+                                <td><center><i><%= tfFunction.at(1) | raw %></i></center></td>
+                            </tr>
+                        </table>
+                        <% end %>
+                        
+					</fieldset>
+					</td>
+					<td>
+					<fieldset>
+						<legend>Identifiable Parameter Combinations</legend>
+                        <%if setmodel %>
+                        <table>
+                            <% foreach combo in idParameters %>
+                                <% item %>
+                                <tr>
+                                    <td>
+                                        <center><%= combo | raw %></center>
+                                    </td>
+                                </tr>
+                                <% end %>
+                            <% end %>
+                        </table>
+                        <% end %>
+					</fieldset>
+					</td>  
+                </tr>
+				<tr>
+					<td colspan="2">	
+					<fieldset>
+					<legend>Parameter Constraints</legend>
+                    <% if not empty paramBound %>
+                        <table>
+                            <tr>
+                                <td><font color='#7f000b'><center>Unconstrained &plusmn; CV</center></font></td>
+                                <td><font color='#7f000b'><center>&lt =</center></font></td>
+                                <td><font color='#7f000b'><center>Constrained &plusmn; CV</center></font></td>
+                                <td><font color='#7f000b'><center>&lt =</center></font></td>
+                                <td><font color='#7f000b'><center>P</center></font></td>
+                                <td><font color='#7f000b'><center>&lt =</center></font></td>
+                                <td><font color='#7f000b'><center>Constrained &plusmn; CV</center></font></td>
+                                <td><font color='#7f000b'><center>&lt =</center></font></td>
+                                <td><font color='#7f000b'><center>Unconstrained &plusmn; CV</center></font></td>
+                            </tr>
+                            
+                            <% foreach bound in paramBound %>
+                                <% item %>
+                                <%= bound | raw %></center>
+                                <% end %>
+                            <% end %>
+                        </table>
+                    <% end %>
+					</fieldset>
+					</td>
+				</tr>
+                
+                <tr>
+					<td colspan = 2>                    
+					<fieldset>
+						<legend>Compartment Masses and Volumes</legend>
+                        <% if not empty massVolume %>
+                        <table>
+                            <tr>
+                                <td><font color='#7f000b'><center>Unconstrained</center></font></td>
+                                <td><font color='#7f000b'><center>&lt =</center></font></td>
+                                <td><font color='#7f000b'><center>Constrained</center></font></td>
+                                <td><font color='#7f000b'><center>&lt =</center></font></td>
+                                <td><font color='#7f000b'><center>P</center></font></td>
+                                <td><font color='#7f000b'><center>&lt =</center></font></td>
+                                <td><font color='#7f000b'><center>Constrained</center></font></td>
+                                <td><font color='#7f000b'><center>&lt =</center></font></td>
+                                <td><font color='#7f000b'><center>Unconstrained</center></font></td>
+                            </tr>
+                            
+                            <% foreach bound in massVolume %>
+                                <% item %>
+                                <%= bound | raw %></center>
+                                <% end %>
+                            <% end %>
+                        </table>
+                        <% end %>
+					</fieldset>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+					<fieldset>
+						<legend>Whole Organism (Derived) Parameters</legend>
+                        <% if setmodel %>
+                        <center>
+                            <%= derivedParams | raw %>
+                        </center>
+                        <% end %>
+					</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<fieldset>
+						<legend>Correlation Matrix</legend>
+                        <% if setmodel %>
+                           <% if empty corrMatrix %>
+                           <center><font color=red> NA: not enough sample size </font></center>
+                           <% end %>
+                           
+                        <% end %>
+					</fieldset>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+					<fieldset>
+						<legend>Model Display</legend>
+					</fieldset>
+					</td>
+				</tr>
+
+			</tbody></table>					
+		</div>
+	</div>
+
+<% end template %>  
+<% end view %>  
+<% end skin %>  
